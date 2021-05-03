@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/colorful1"
+    android:padding="16dp"
+    tools:context="com.make.sixFunction.listYourWord.AddNewYourWordFragment">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Từ vựng:"/>
+    <EditText
+        android:id="@+id/edt_newYourWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phiên âm:"/>
+    <EditText
+        android:id="@+id/edt_translater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dịch nghĩa:"/>
+    <EditText
+        android:id="@+id/edt_meanning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_addNewYourWord"
+        android:backgroundTint="@null"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_green_conner_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Mới" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:layout_height="match_parent"
+tools:context="com.make.sixFunction.examTest.ExamTest">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_Examtest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/colorful5"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+<androidx.recyclerview.widget.RecyclerView
+    android:background="@drawable/colorful7"
+    android:id="@+id/rcv_ExamTest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

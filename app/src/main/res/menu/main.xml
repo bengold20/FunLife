@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_setting"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_setting2"
+        android:title="Thoát"
+        app:showAsAction="always" >
+        <menu>
+            <item
+                android:id="@+id/action_endApp"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_out"
+                android:title="Thoát"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/action_logOut"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_logout"
+                android:title="Đăng Xuất"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+</menu>

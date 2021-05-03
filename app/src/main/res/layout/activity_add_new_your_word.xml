@@ -1,0 +1,101 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.make.sixFunction.listYourWord.AddNewYourWord">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_AddWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/colorful5"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <FrameLayout
+            android:id="@+id/container_newYourWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:background="@color/ben_YellowGreen"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_searchNewWord"
+            android:background="@drawable/bg_white_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"/>
+
+            <ImageButton
+                android:id="@+id/imgbtn_searchNewWord"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/ic_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+       <TableLayout
+           android:background="@color/Blue_Green"
+           android:stretchColumns="*"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TableRow>
+               <TextView
+                   android:layout_gravity="center"
+                   android:text="Từ Vựng"
+                   android:textSize="16dp"
+                   android:textStyle="bold"/>
+               <TextView
+                   android:layout_gravity="center"
+                   android:text="Phiên Dịch"
+                   android:textSize="16dp"
+                   android:textStyle="bold"/>
+               <TextView
+                   android:layout_gravity="center"
+                   android:text="Dịch Nghĩa"
+                   android:textSize="16dp"
+                   android:textStyle="bold"/>
+               <TextView
+                   android:layout_gravity="center"
+                   android:text="Edit/Delete"
+                   android:textSize="16dp"
+                   android:textStyle="bold"/>
+           </TableRow>
+       </TableLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_newYourWord"
+            android:background="@drawable/colorful2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_addNewYourWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_deleteAllNewYourWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/ic_delete_all" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

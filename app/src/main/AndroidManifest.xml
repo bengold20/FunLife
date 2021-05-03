@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.make.main">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppStudyEnglish.NoActionBar">
+        <activity android:name="com.make.sixFunction.examTest.slide.TestDoneActivity"></activity>
+        <activity android:name="com.make.sixFunction.examTest.slide.ScreenSlideActivity" />
+        <activity android:name="com.make.sixFunction.examTest.ExamTest" />
+        <activity android:name="com.make.sixFunction.grammar.intent12GrammarStructure.FuturePerfectContinuous" />
+        <activity android:name="com.make.sixFunction.grammar.intent12GrammarStructure.FuturePerfect" />
+        <activity android:name="com.make.sixFunction.grammar.intent12GrammarStructure.FutureContinuous" />
+        <activity android:name="com.make.sixFunction.grammar.intent12GrammarStructure.SimpleFuture" />
+        <activity android:name="com.make.sixFunction.grammar.intent12GrammarStructure.PastPerfectContinuous" />
+        <activity android:name="com.make.sixFunction.grammar.intent12GrammarStructure.PastPerfect" />
+        <activity android:name="com.make.sixFunction.grammar.intent12GrammarStructure.PastContinuous" />
+        <activity android:name="com.make.sixFunction.grammar.intent12GrammarStructure.SimplePast" />
+        <activity android:name="com.make.sixFunction.grammar.intent12GrammarStructure.PresentPerfectContinuous" />
+        <activity android:name="com.make.sixFunction.grammar.intent12GrammarStructure.PresentPerfect" />
+        <activity android:name="com.make.sixFunction.grammar.intent12GrammarStructure.PresentContinuous" />
+        <activity android:name="com.make.sixFunction.grammar.intent12GrammarStructure.PresentSimple" />
+        <activity android:name="com.make.sixFunction.grammar.GrammarStructureActivity" />
+        <activity android:name="com.make.sixFunction.grammar.GrammarActivity" />
+        <activity android:name="com.make.login.LoginActivity">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name="com.make.sixFunction.listYourWord.AddNewYourWord" />
+        <activity android:name="com.make.sixFunction.tableDTBQT.TableDTBQTActivity" />
+        <activity android:name="com.make.sixFunction.wordPopular.WordActivity" />
+        <activity
+            android:name="com.make.main.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AppStudyEnglish.NoActionBar">
+        </activity>
+        <activity android:name="com.make.login.SignUpActivity" />
+        <!-- <activity android:name=".SignInActivity" /> -->
+        <activity android:name="com.make.onBoardingScreen.OnBoardingActivity" >
+
+        </activity>
+    </application>
+
+</manifest>
