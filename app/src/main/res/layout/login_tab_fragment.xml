@@ -47,12 +47,15 @@
         android:orientation="horizontal">
 
         <CheckBox
+            android:id="@+id/cb_remember"
             style="@style/Widget.AppCompat.CompoundButton.CheckBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/black"
-            android:text="remember ?"
-            android:textColor="@color/black" />
+            android:checked="true"
+            android:text="Remember ?"
+            android:textColor="@color/black"
+            android:visibility="visible" />
 
         <TextView
             android:layout_width="wrap_content"

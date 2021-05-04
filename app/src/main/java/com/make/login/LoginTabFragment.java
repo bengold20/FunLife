@@ -1,12 +1,15 @@
 package com.make.login;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -31,6 +34,11 @@ public class LoginTabFragment extends Fragment {
     View view;
 
     FirebaseAuth fAuth;
+
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
+    Boolean saveLogin;
+    CheckBox cbRemember;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -77,6 +85,17 @@ public class LoginTabFragment extends Fragment {
         //firebase
         fAuth = FirebaseAuth.getInstance();
 
+        //sharedPreferences
+        sharedPreferences = getActivity().getSharedPreferences("myLogin", Context.MODE_PRIVATE);
+        cbRemember = view.findViewById(R.id.cb_remember);
+        editor = sharedPreferences.edit();
+
+        saveLogin = sharedPreferences.getBoolean("saveLogin",true);
+        if(saveLogin == true){
+            edtEmail.setText(sharedPreferences.getString("emailRemember",null));
+            edtPassword.setText(sharedPreferences.getString("passwordRemember",null));
+        }
+
     }
 
     public void Login() {
@@ -93,6 +112,12 @@ public class LoginTabFragment extends Fragment {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Toast.makeText(getContext(), "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
+                    if(cbRemember.isChecked()){
+                        editor.putBoolean("saveLogin",true);
+                        editor.putString("emailRemember",email);
+                        editor.putString("passwordRemember",password);
+                        editor.commit();
+                    }
                     Intent i = new Intent(getActivity(), MainActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putString("email",email);
