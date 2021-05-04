@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_Grammar"
     android:layout_width="match_parent"
-    android:orientation="horizontal"
-    android:padding="16dp"
+    android:layout_height="wrap_content"
     android:layout_margin="5dp"
     android:background="@drawable/bg_rosy_conner_10"
-    android:id="@+id/ll_Grammar"
-    android:layout_height="wrap_content">
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content">
+    android:orientation="horizontal"
+    android:padding="16dp">
 
-    <TextView
-        android:id="@+id/txt_titleGrammar"
-        android:text="title"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/txt_descriptionGrammar"
-        android:text="description"
-        android:textSize="12dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_titleGrammar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_descriptionGrammar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:textSize="12dp" />
     </LinearLayout>
 
     <ImageView
         android:id="@+id/im_nextGrammar"
-        android:layout_gravity="center"
-        android:src="@drawable/ic_next"
         android:layout_width="50dp"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_next" />
 </LinearLayout>

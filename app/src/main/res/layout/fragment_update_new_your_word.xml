@@ -1,12 +1,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/colorful1"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context="com.make.sixFunction.listYourWord.UpdateNewYourWordFragment">
+    tools:context="com.make.Function.listYourWord.UpdateNewYourWordFragment">
 
 
     <TextView
@@ -52,12 +52,12 @@
 
     <Button
         android:id="@+id/btn_UpdateNewYourWord"
-        android:backgroundTint="@null"
-        app:backgroundTint="@null"
-        android:textColor="@color/black"
-        android:background="@drawable/bg_green_conner_10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="update" />
+        android:background="@drawable/bg_green_conner_10"
+        android:backgroundTint="@null"
+        android:text="update"
+        android:textColor="@color/black"
+        app:backgroundTint="@null" />
 
 </LinearLayout>

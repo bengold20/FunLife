@@ -13,11 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.make.main.R;
 import com.make.model.FunctionInHomeModel;
-import com.make.sixFunction.examTest.ExamTest;
-import com.make.sixFunction.listYourWord.AddNewYourWord;
-import com.make.sixFunction.grammar.GrammarActivity;
-import com.make.sixFunction.tableDTBQT.TableDTBQTActivity;
-import com.make.sixFunction.wordPopular.WordActivity;
+import com.make.Function.examTest.ExamTest;
+import com.make.Function.listYourWord.AddNewYourWord;
+import com.make.Function.grammar.GrammarActivity;
+import com.make.Function.tableDTBQT.TableDTBQTActivity;
+import com.make.Function.wordPopular.WordActivity;
 
 import java.util.List;
 

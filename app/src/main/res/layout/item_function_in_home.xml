@@ -1,40 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="30dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:background="@color/ben_orange"
         android:gravity="center"
-        >
+        android:orientation="vertical">
+
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             app:cardCornerRadius="50dp">
-        <ImageView
-            android:id="@+id/img_function_in_home"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:background="@drawable/bg_conner_10"
-            android:src="@drawable/img_vocaburary"
-            android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/img_function_in_home"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_conner_10"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_vocaburary" />
         </androidx.cardview.widget.CardView>
+
         <TextView
-            android:gravity="center"
             android:id="@+id/txt_function_in_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-        android:textColor="@color/black"
-        android:text="Từ Vựng"
-        android:padding="6dp"/>
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Từ Vựng"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

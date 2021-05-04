@@ -83,20 +83,23 @@ public class LoginTabFragment extends Fragment {
         if (!validateEmail() | !validatePassword()) {
             return;
         }
+
         String email = edtEmail.getText().toString().trim();
         String password = edtPassword.getText().toString().trim();
 
         //authenticate the user
-
         fAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Toast.makeText(getContext(), "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(getActivity(), MainActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("email",email);
+                    i.putExtras(bundle);
                     startActivity(i);
                 } else {
-                    Toast.makeText(getContext(), "Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Tài Khoản Không Tồn Tại \n"+"Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });

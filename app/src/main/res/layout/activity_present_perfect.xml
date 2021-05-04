@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/colorful4"
     android:orientation="vertical"
-    tools:context="com.make.sixFunction.grammar.intent12GrammarStructure.PresentPerfect">
+    tools:context="com.make.Function.grammar.intent12GrammarStructure.PresentPerfect">
 
     <ListView
         android:id="@+id/lv_PresentPerfect"

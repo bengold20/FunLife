@@ -1,20 +1,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:background="@drawable/colorful1"
+    android:orientation="vertical"
     android:padding="16dp"
-    tools:context="com.make.sixFunction.listYourWord.AddNewYourWordFragment">
+    tools:context="com.make.Function.listYourWord.AddNewYourWordFragment">
 
 
     <TextView
-        android:textStyle="bold"
-        android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Từ vựng:"/>
+        android:text="Từ vựng:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/edt_newYourWord"
         android:layout_width="match_parent"
@@ -23,11 +24,12 @@
 
 
     <TextView
-        android:textStyle="bold"
-        android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Phiên âm:"/>
+        android:text="Phiên âm:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/edt_translater"
         android:layout_width="match_parent"
@@ -36,11 +38,12 @@
 
 
     <TextView
-        android:textStyle="bold"
-        android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dịch nghĩa:"/>
+        android:text="Dịch nghĩa:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/edt_meanning"
         android:layout_width="match_parent"
@@ -49,12 +52,12 @@
 
     <Button
         android:id="@+id/btn_addNewYourWord"
-        android:backgroundTint="@null"
-        app:backgroundTint="@null"
-        android:textColor="@color/black"
-        android:background="@drawable/bg_green_conner_10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Thêm Mới" />
+        android:background="@drawable/bg_green_conner_10"
+        android:backgroundTint="@null"
+        android:text="Thêm Mới"
+        android:textColor="@color/black"
+        app:backgroundTint="@null" />
 
 </LinearLayout>

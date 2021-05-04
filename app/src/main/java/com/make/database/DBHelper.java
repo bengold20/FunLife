@@ -61,7 +61,7 @@ public class DBHelper extends SQLiteOpenHelper {
             checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
         } catch (SQLiteException e) {
             //database chua ton tai
-            Log.e("checkDataBase: ", "database không tồn tại");
+            Log.e("DBHeplper: ", "database không tồn tại");
         }
 
         if (checkDB != null)

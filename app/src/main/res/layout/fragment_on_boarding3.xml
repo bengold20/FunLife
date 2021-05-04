@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp"
@@ -11,8 +11,9 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        app:cardCornerRadius="30dp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp">
+
         <ImageView
             android:id="@+id/img_boarding3"
             android:layout_width="300dp"
@@ -34,10 +35,10 @@
         android:id="@+id/btn_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@null"
-        app:backgroundTint="@null"
         android:background="@drawable/bg_green_conner_10"
-        android:text="Get Start!" />
+        android:backgroundTint="@null"
+        android:text="Get Start!"
+        app:backgroundTint="@null" />
 
 
 </LinearLayout>

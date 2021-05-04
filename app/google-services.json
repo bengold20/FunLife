@@ -1,15 +1,15 @@
 {
   "project_info": {
     "project_number": "15970306847",
-    "project_id": "appenglish-52e0a",
-    "storage_bucket": "appenglish-52e0a.appspot.com"
+    "project_id": "funlife-52e0a",
+    "storage_bucket": "funlife-52e0a.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:15970306847:android:2bc942c832027550743e2a",
         "android_client_info": {
-          "package_name": "com.example.appenglish"
+          "package_name": "com.example.funlife"
         }
       },
       "oauth_client": [

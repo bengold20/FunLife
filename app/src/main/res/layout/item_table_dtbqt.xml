@@ -10,32 +10,32 @@
             android:id="@+id/txt_dongTuNguyenMau"
             android:layout_gravity="center"
             android:background="@color/ben_orange"
-            android:textColor="@color/black"
             android:text="dongTuNguyenMau"
+            android:textColor="@color/black"
             android:textSize="10sp" />
 
         <TextView
             android:id="@+id/txt_theQuaKhu"
             android:layout_gravity="center"
+            android:background="@color/ben_yellow"
             android:text="theQuaKhu"
             android:textColor="@color/black"
-            android:background="@color/ben_yellow"
             android:textSize="10sp" />
 
         <TextView
             android:id="@+id/txt_quaKhuPhanTu"
             android:layout_gravity="center"
+            android:background="@color/ben_green"
             android:text="quaKhuPhanTu"
             android:textColor="@color/black"
-             android:background="@color/ben_green"
             android:textSize="10sp" />
 
         <TextView
             android:id="@+id/txt_nghiaDongTu"
-            android:textColor="@color/black"
             android:layout_gravity="center"
             android:background="@color/Blue_Green"
             android:text="nghiaDongTu"
+            android:textColor="@color/black"
             android:textSize="10sp" />
     </TableRow>
 </TableLayout>

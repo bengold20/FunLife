@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:orientation="horizontal"
-    android:background="@drawable/bg_white_search"
     android:id="@+id/ll_GrammarStructure"
-    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="5dp"
-    android:layout_height="wrap_content">
+    android:background="@drawable/bg_white_search"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_height="wrap_content">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/txt_titleGrammarStructure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="title"
             android:textSize="18dp"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/txt_descriptionGrammarStructure"
-            android:text="description"
-            android:textSize="12dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:textSize="12dp" />
     </LinearLayout>
 
     <ImageView
         android:id="@+id/im_nextGrammarStructure"
-        android:layout_gravity="center"
-        android:src="@drawable/ic_next"
         android:layout_width="50dp"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_next" />
 </LinearLayout>

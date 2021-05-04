@@ -13,7 +13,6 @@ import androidx.fragment.app.Fragment;
 
 import com.make.login.LoginActivity;
 import com.make.main.R;
-import com.make.login.SignUpActivity;
 
 public class OnBoardingFragment3 extends Fragment {
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp"
@@ -11,15 +11,16 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        app:cardCornerRadius="30dp"
+        android:layout_height="wrap_content"
         android:outlineAmbientShadowColor="@color/ben_Purple2"
         android:outlineSpotShadowColor="@color/ben_yellow2"
-        android:layout_height="wrap_content">
-    <ImageView
-        android:id="@+id/img_boarding1"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/ic_rabbit" />
+        app:cardCornerRadius="30dp">
+
+        <ImageView
+            android:id="@+id/img_boarding1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/ic_rabbit" />
     </androidx.cardview.widget.CardView>
 
     <TextView

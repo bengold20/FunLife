@@ -2,57 +2,55 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/contentExamTest"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:padding="16dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_height="match_parent">
+        android:padding="16dp">
 
-
-        //bởi vì có cái đè lên nhau :))
         <RelativeLayout
-            android:paddingTop="16dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp">
 
             <TextView
                 android:id="@+id/txt_contentQuestion"
-                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="40dp"
-                android:paddingTop="40dp"
                 android:layout_marginTop="20dp"
+                android:background="@drawable/bg_yellow_conner_10"
                 android:gravity="center"
                 android:paddingLeft="10dp"
+                android:paddingTop="40dp"
                 android:paddingRight="10dp"
-                android:background="@drawable/bg_yellow_conner_10"
-                android:text="content question one"/>
+                android:paddingBottom="40dp"
+                android:text="content question one"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/txt_question"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:textColor="@color/black"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:background="@drawable/bg_blue"
-                android:layout_centerHorizontal="true"
-                android:textSize="20sp"
-                android:text="question 1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_blue"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="question 1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
         </RelativeLayout>
 
         <ImageView
             android:id="@+id/ivIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_margin="0dp"
             android:padding="0dp"
-            android:layout_gravity="center"
             android:visibility="visible" />
 
         <RadioGroup
@@ -63,51 +61,51 @@
 
             <RadioButton
                 android:id="@+id/radA"
-                android:checked="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="answer 4"
                 android:layout_marginTop="30dp"
-                android:textColor="@color/black"
+                android:background="@drawable/bg_yellow_conner_30"
+                android:checked="false"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:background="@drawable/bg_yellow_conner_30"/>
+                android:text="answer 4"
+                android:textColor="@color/black" />
 
             <RadioButton
                 android:id="@+id/radB"
-                android:checked="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="answer 4"
                 android:layout_marginTop="30dp"
-                android:textColor="@color/black"
+                android:background="@drawable/bg_yellow_conner_30"
+                android:checked="false"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:background="@drawable/bg_yellow_conner_30"/>
+                android:text="answer 4"
+                android:textColor="@color/black" />
 
             <RadioButton
                 android:id="@+id/radC"
-                android:checked="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="answer 4"
                 android:layout_marginTop="30dp"
-                android:textColor="@color/black"
+                android:background="@drawable/bg_yellow_conner_30"
+                android:checked="false"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:background="@drawable/bg_yellow_conner_30"/>
+                android:text="answer 4"
+                android:textColor="@color/black" />
 
             <RadioButton
                 android:id="@+id/radD"
-                android:checked="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="answer 4"
                 android:layout_marginTop="30dp"
-                android:textColor="@color/black"
+                android:background="@drawable/bg_yellow_conner_30"
+                android:checked="false"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:background="@drawable/bg_yellow_conner_30"/>
+                android:text="answer 4"
+                android:textColor="@color/black" />
         </RadioGroup>
 
     </LinearLayout>

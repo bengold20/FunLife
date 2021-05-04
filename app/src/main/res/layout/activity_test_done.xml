@@ -3,33 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/colorful1"
     android:layout_height="match_parent"
-    tools:context="com.make.sixFunction.examTest.slide.TestDoneActivity">
+    android:background="@drawable/colorful1"
+    android:orientation="vertical"
+    tools:context="com.make.Function.examTest.slide.TestDoneActivity">
 
     <LinearLayout
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="KẾT QUẢ BÀI KIỂM TRA" />
+            android:layout_gravity="center"
+            android:text="KẾT QUẢ BÀI KIỂM TRA"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <ImageView
-            android:layout_marginLeft="5dp"
-            android:src="@drawable/ic_done_all"
             android:layout_width="30dp"
-            android:layout_height="30dp"/>
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_done_all" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,20 +38,21 @@
 
         <TextView
             android:id="@+id/textViews"
-            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Câu đúng:" />
+            android:text="Câu đúng:"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/txt_ansTrue"
-            android:textColor="@color/black"
-            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textColor="@color/black" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,20 +60,21 @@
 
         <TextView
             android:id="@+id/tesfxtView2"
-            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Câu Sai:" />
+            android:text="Câu Sai:"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/txt_ansFalse"
-            android:textColor="@color/black"
             android:layout_width="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textColor="@color/black" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,20 +82,21 @@
 
         <TextView
             android:id="@+id/tesdfxtView2"
-            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Câu chưa trả lời:" />
+            android:text="Câu chưa trả lời:"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/txt_notAns"
-            android:textColor="@color/black"
-            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textColor="@color/black" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -100,36 +104,36 @@
 
         <TextView
             android:id="@+id/texsftView2"
-            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Tổng Điểm: "
 
-            android:text="Tổng Điểm: " />
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/txt_sumScores"
-            android:textColor="@color/black"
-            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="txt_sumScores" />
+            android:text="txt_sumScores"
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <LinearLayout
-        android:gravity="center"
-        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
         <Button
             android:id="@+id/btn_exitExam"
-            android:textColor="@color/black"
-            android:background="@drawable/bg_orange_conner_30"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Thoát" />
+            android:background="@drawable/bg_orange_conner_30"
+            android:text="Thoát"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 </LinearLayout>

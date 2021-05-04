@@ -70,7 +70,7 @@ public class SigupTabFragment extends Fragment {
                         if (task.isSuccessful()) {
                             Toast.makeText(getContext(), "Đăng kí thành công", Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(getContext(), "Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), "Tài khoản đã tồn tại"+"Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

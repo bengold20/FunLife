@@ -7,12 +7,12 @@
 
     <TextView
         android:id="@+id/txt_inforAppEnglish"
-        android:textSize="16sp"
-        android:background="@drawable/colorful"
-        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/colorful"
         android:gravity="center"
-        android:text="Hello" />
+        android:text="Hello"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
 </RelativeLayout>

@@ -39,9 +39,6 @@ public class HomeFragment extends Fragment {
 
         mfunctionInHomeAdapter.setData(getListFunction());
         rcv_functionInHome.setAdapter(mfunctionInHomeAdapter);
-//
-//        Intent intent = new Intent(getActivity(),UpdateUserActivity.class);
-//        startActivity(intent);
 
         return root;
     }

@@ -12,11 +12,11 @@
             android:id="@+id/nav_infor"
             android:icon="@drawable/ic_info"
             android:title="@string/menu_infor" />
-
-       </group>
+    </group>
 
     <group android:checkableBehavior="single">
-        <item android:id="@+id/subtitle"
+        <item
+            android:id="@+id/subtitle"
             android:title="Share">
             <menu>
                 <item

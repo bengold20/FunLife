@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
 
     private ImageView img_header;
-    private TextView txt_nav_nameUserHeader;
     private TextView txt_nav_emailUserHeader;
 
     private long backPressedTime;
@@ -52,14 +51,18 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        //get data from Login
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        String email = bundle.getString("email");
+
+
         //header menu navigationdraw
         View headerView = navigationView.getHeaderView(0);
         img_header = headerView.findViewById(R.id.img_header);
         img_header.setImageResource(R.drawable.img_avt);
-        txt_nav_nameUserHeader = headerView.findViewById(R.id.txt_nav_nameUserHeader);
-        txt_nav_nameUserHeader.setText("I LOVE U");
         txt_nav_emailUserHeader = headerView.findViewById(R.id.txt_nav_emailUserHeader);
-        txt_nav_emailUserHeader.setText("thegioiIT.com");
+        txt_nav_emailUserHeader.setText(email);
 
 
     }

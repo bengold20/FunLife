@@ -9,37 +9,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <GridView
             android:id="@+id/gv_listAnswer"
-            android:numColumns="3"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_height="match_parent"/>
+            android:numColumns="3" />
     </LinearLayout>
 
     <LinearLayout
-        android:paddingTop="16dp"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
 
         <Button
             android:id="@+id/btn_closeDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="2dp"
             android:background="@drawable/bg_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="đóng" />
 
         <Button
-            android:layout_marginBottom="2dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/bg_button"
             android:id="@+id/btn_finishExam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/bg_button"
             android:text="kết thúc" />
     </LinearLayout>
 

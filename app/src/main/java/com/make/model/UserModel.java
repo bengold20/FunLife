@@ -10,7 +10,7 @@ public class UserModel implements Serializable {
     @PrimaryKey(autoGenerate = true) //khoa chinh tu dong render
     private int id;
 
-    //@ColumnInfo (name = "user_name") //lam vay de tao cot. khong lam thi cot hien thi binh thuong nhu ben duoi. 2 cot là userName và address
+    //@ColumnInfo (name = "user_name") //lam vay de tao cot. khong lam thi cot hien thi binh thuong nhu ben duoi
     private String userName;
     private String dateOfBirth;
     private String address;

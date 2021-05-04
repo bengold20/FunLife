@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/colorful4"
     android:layout_height="match_parent"
-    tools:context="com.make.sixFunction.grammar.intent12GrammarStructure.PresentSimple">
+    android:background="@drawable/colorful4"
+    android:orientation="vertical"
+    tools:context="com.make.Function.grammar.intent12GrammarStructure.PresentSimple">
 
     <ListView
         android:id="@+id/lv_presentSimple"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

@@ -14,10 +14,10 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            app:titleTextColor="@color/white"
             android:layout_height="?attr/actionBarSize"
             android:background="@drawable/colorful5"
-            app:popupTheme="@style/Theme.AppStudyEnglish.PopupOverlay" />
+            app:popupTheme="@style/Theme.AppStudyEnglish.PopupOverlay"
+            app:titleTextColor="@color/white" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

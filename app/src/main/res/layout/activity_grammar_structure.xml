@@ -4,7 +4,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:orientation="horizontal"
 android:layout_height="match_parent"
-tools:context="com.make.sixFunction.grammar.GrammarStructureActivity">
+tools:context="com.make.Function.grammar.GrammarStructureActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:background="@drawable/colorful3"
